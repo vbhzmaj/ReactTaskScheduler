@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-const Addtask = (onAdd) => {
+const Addtask = ({onAdd}) => {
     const [text, setText] = useState('')
     const [day, setDay] = useState('')
     const [reminder, setReminder] = useState(false)
@@ -13,7 +13,7 @@ const onSubmit = (e) => {
         return
     }
 
-    onAdd( {text, day, reminder})
+    onAdd({ text, day, reminder })
 
     setText('')
     setDay('')
