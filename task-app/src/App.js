@@ -1,8 +1,10 @@
 import {useState, useEffect} from 'react'
 import Header from './components/Header'
+import Footer from './components/Footer'
 import Tasks from './components/Tasks'
 import AddTask from './components/AddTask'
-import React, { Component }  from 'react';
+import React from 'react';
+import About from './components/About'
 
 function App() {
   const [showAddTask, setShowAddTask] = useState
@@ -102,7 +104,7 @@ setTasks(tasks.map((task) =>
       ) : ('No Tasks To Show'
       )} 
       
-
+    <Footer />
     </div>
     //other possibility: //(<Header title='Hello'/>)
   );
