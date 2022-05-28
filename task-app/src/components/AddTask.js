@@ -1,4 +1,6 @@
-import { useState } from "react"
+import { useState } from 'react'
+import React, { Component }  from 'react';
+
 
 const Addtask = ({onAdd}) => {
     const [text, setText] = useState('')
